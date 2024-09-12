@@ -14,6 +14,33 @@ $$
 a^2 + b^2 = c^2
 $$
 
+we're just cooking with the tests now:
+<div style="width: 100%; display: flex; justify-content: center;">
+
+<table style="margin: auto;">
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+    <th>Header 3</th>
+  </tr>
+  <tr>
+    <td>Row 1</td>
+    <td>Data</td>
+    <td>Data</td>
+  </tr>
+  <tr>
+    <td>Row 2</td>
+    <td>Data</td>
+    <td>Data</td>
+  </tr>
+  <tr>
+    <td>Row 3</td>
+    <td>Data</td>
+    <td>Data</td>
+  </tr>
+</table>
+
+</div>
 
 <!-- Use HTML to center the table -->
 <div style="display: flex; justify-content: center;">
