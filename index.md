@@ -1,5 +1,5 @@
 # Testing LaTeX with GitHub Pages
-ttest 2
+ttest 3
 This is an inline formula: $E = mc^2$.
 
 Below is a block formula:
@@ -13,3 +13,8 @@ More complex equation:
 $$
 a^2 + b^2 = c^2
 $$
+
+<!-- Add this script to load MathJax -->
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
