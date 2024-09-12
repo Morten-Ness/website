@@ -32,3 +32,10 @@ $$
 | Row 1    | Data     | Data     |
 | Row 2    | Data     | Data     |
 | Row 3    | Data     | Data     |
+
+
+
+<!-- Add this script to load MathJax -->
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
