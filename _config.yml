@@ -2,3 +2,5 @@ title: "LaTeX Test with GitHub Pages"
 markdown: kramdown
 kramdown:
   math_engine: mathjax
+include:
+  - styles.css
