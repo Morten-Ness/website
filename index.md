@@ -33,6 +33,34 @@ $$
 | Row 2    | Data     | Data     |
 | Row 3    | Data     | Data     |
 
+<!-- Use HTML to center the table -->
+<div style="display: flex; justify-content: center;">
+
+<!-- Full HTML table -->
+<table>
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+    <th>Header 3</th>
+  </tr>
+  <tr>
+    <td>Row 1</td>
+    <td>Data</td>
+    <td>Data</td>
+  </tr>
+  <tr>
+    <td>Row 2</td>
+    <td>Data</td>
+    <td>Data</td>
+  </tr>
+  <tr>
+    <td>Row 3</td>
+    <td>Data</td>
+    <td>Data</td>
+  </tr>
+</table>
+
+</div>
 
 
 <!-- Add this script to load MathJax -->
