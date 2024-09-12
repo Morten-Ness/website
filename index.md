@@ -1,5 +1,5 @@
 # Testing LaTeX with GitHub Pages
-
+ttest 2
 This is an inline formula: $E = mc^2$.
 
 Below is a block formula:
