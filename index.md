@@ -10,10 +10,10 @@ $$
 a^2 + b^2 = c^2
 $$
 
-<!-- Use HTML and CSS to center the table -->
-<div style="width: 100%; display: flex; justify-content: center;">
+<!-- Use a div with the align attribute to center the table -->
+<div align="center">
 
-<table style="margin: auto;">
+<table>
   <tr>
     <th>Header 1</th>
     <th>Header 2</th>
