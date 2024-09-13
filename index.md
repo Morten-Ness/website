@@ -10,8 +10,8 @@ $$
 a^2 + b^2 = c^2
 $$
 
-<!-- Use a div with the align attribute to center the table -->
-<div align="center">
+<!-- Center the table using the <center> tag -->
+<center>
 
 <table>
   <tr>
@@ -36,7 +36,7 @@ $$
   </tr>
 </table>
 
-</div>
+</center>
 
 <!-- Add this script to load MathJax -->
 <script type="text/javascript" id="MathJax-script" async
