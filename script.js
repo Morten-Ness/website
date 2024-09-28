@@ -37,6 +37,11 @@ function createChart(data) {
             }]
         },
         options: {
+            plugins: {
+                legend: {
+                  display: false
+                        }
+                    },
             scales: {
                 x: {
                     beginAtZero: true
