@@ -52,13 +52,6 @@ function createChart(data) {
                     beginAtZero: true
                 }
             }
-        },
-    tooltips: {
-        callbacks: {
-           label: function(tooltipItem) {
-                  return tooltipItem.yLabel;
-           }
         }
-    }
     });
 }
