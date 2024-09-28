@@ -24,24 +24,25 @@ function createChart(data) {
     const ctx = document.getElementById('myChart').getContext('2d');
 
     // Create the chart
-    const myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: labels,  // x-axis labels
-            datasets: [{
-                data: salesData,  // y-axis data points
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                borderColor: 'rgba(75, 192, 192, 1)',
-                borderWidth: 1
-            }]
+const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: labels,  // x-axis labels
+        datasets: [{
+            label: null,  // Set label to null or undefined
+            data: salesData,  // y-axis data points
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 1
+        }]
+    },
+    options: {
+        plugins: {
+            legend: {
+                display: false  // Hides the legend box
+            }
         },
-        options: {
-            plugins: {
-                legend: {
-                  display: false
-                        }
-                    },
-            scales: {
+    scales: {
                 x: {
                     beginAtZero: true
                 },
