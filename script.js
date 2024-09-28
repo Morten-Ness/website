@@ -19,7 +19,7 @@ function createChart(data) {
 
     // Create a new chart
     const myChart = new Chart(ctx, {
-        type: 'bar',  // Change to 'line' or any other chart type if needed
+        type: 'line',  // Change to 'line' or any other chart type if needed
         data: {
             labels: labels,  // x-axis labels
             datasets: [{
