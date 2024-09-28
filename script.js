@@ -27,7 +27,6 @@ function createChart(data) {
     const myChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: labels,  // x-axis labels
             datasets: [{
                 label: 'Sales',  // Name of the dataset
                 data: salesData,  // y-axis data points
