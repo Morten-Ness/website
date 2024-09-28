@@ -10,19 +10,26 @@ Papa.parse("data.csv", {
 
 // Function to create a chart with the parsed CSV data
 function createChart(data) {
-    // Extract labels and data points from the CSV
-    const labels = data.map(row => row.Month);  // Use the 'Month' column as labels
-    const salesData = data.map(row => parseInt(row.Sales));  // Use the 'Sales' column as data
+    // Extract labels and data points from the CSV, ensuring both arrays have the same length
+    const labels = data.map(row => row.Month).filter(label => label);  // Filter out any undefined labels
+    const salesData = data.map(row => parseInt(row.Sales)).filter(value => !isNaN(value));  // Remove invalid numbers
+
+    // Check the length of labels and data
+    if (labels.length !== salesData.length) {
+        console.error("Labels and data length mismatch. Please check your data source.");
+        return;
+    }
 
     // Get the canvas element
     const ctx = document.getElementById('myChart').getContext('2d');
 
-    // Create a new chart
+    // Create the chart
     const myChart = new Chart(ctx, {
-        type: 'line',  // Change to 'line' or any other chart type if needed
+        type: 'line',
         data: {
             labels: labels,  // x-axis labels
             datasets: [{
+                label: 'Sales Data',
                 data: salesData,  // y-axis data points
                 backgroundColor: 'rgba(75, 192, 192, 0.2)',
                 borderColor: 'rgba(75, 192, 192, 1)',
@@ -31,6 +38,9 @@ function createChart(data) {
         },
         options: {
             scales: {
+                x: {
+                    beginAtZero: true
+                },
                 y: {
                     beginAtZero: true
                 }
