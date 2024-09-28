@@ -29,7 +29,6 @@ function createChart(data) {
         data: {
             labels: labels,  // x-axis labels
             datasets: [{
-                label: '',  // Empty label to remove it from the chart
                 data: salesData,  // y-axis data points
                 backgroundColor: 'rgba(75, 192, 192, 0.2)',
                 borderColor: 'rgba(75, 192, 192, 1)',
