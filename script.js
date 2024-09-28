@@ -41,6 +41,8 @@ function createChart(data) {
                     beginAtZero: true
                 },
                 y: {
+                    min: 0,  // Set the minimum value
+                    max: 100,  // Set the maximum value
                     beginAtZero: true
                 }
             }
